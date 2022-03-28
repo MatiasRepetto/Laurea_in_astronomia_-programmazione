@@ -11,8 +11,8 @@ p1b = A*B %Producto usual de matrices
 p1c = (C)^2 % Producto usual de matrices 
 p2 = C.*C % En este caso hacemos el producto punto o hadammad p2 != p1c
 p3 = inverse(A)
-p4 = det(B)
+p4 = [det(B) 0 0;0 0 0;0 0 0]
 D = A.*B %Volvemos a tener el producto hadammad de matrices a diferencia de p1b
 
-save("ejercicio2p1.dat", 'A', 'B', 'C', 'p1a', 'p1b', 'p1c', 'p2', 'p3', 'p4', 'D', '-ascii')
+save "ejercicio2p1.dat" A B C p1a p1b p1c p2 p3 p4 D -ascii
  

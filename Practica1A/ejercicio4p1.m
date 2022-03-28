@@ -4,7 +4,7 @@ close all
 
 a = input('Ingrese el coeficiente de grado 2: ');
 b = input('Ingrese el coeficiente de grado 1: ');
-c = input('Ingrese el termino independiente: ');
+c = input('Ingrese el coeficiente independiente: ');
 x1 = (-(b) + sqrt(((b)^2)-4*(a)*(c)))/a
 x2 = (-(b) - sqrt(((b)^2)-4*(a)*(c)))/a
 clc
