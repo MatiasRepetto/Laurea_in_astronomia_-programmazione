@@ -2,8 +2,10 @@ clear;
 clc;
 close all;
 
+prompt = 'Ingrese el nombre de la imagen a filtrar (ejemplo.jpg): ';
+a = input(prompt,'s');
 
-objeto = imread('prueba.tif');
+objeto = imread(a);
 sizObj = size(objeto);
 
 stat = mod(sizObj(1,1), 2);
@@ -51,6 +53,7 @@ figure(1);
 imagesc([objeto, fotoFil]);
 axis image;
 colormap gray;
+saveas(figure(1),'Filtrada','png')
 clear;
 
 
