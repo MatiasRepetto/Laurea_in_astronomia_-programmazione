@@ -20,6 +20,3 @@ j = (p(1)*LgVs)+p(2);
 hold on
 scatter(LgVs, LgKT);
 plot(LgVs, j);
-
-
-%Have to Fix it
